@@ -13,7 +13,6 @@ target 'zhihukantu' do
     pod 'JGProgressHUD'
     pod 'Ono'
     pod 'SDWebImage', '~>3.8'
-    pod 'TesseractOCRiOS', :git => 'https://github.com/chaoskyme/Tesseract-OCR-iOS.git'
     pod 'Weibo_SDK', :git => 'https://github.com/sinaweibosdk/weibo_ios_sdk.git'
     pod 'CocoaAsyncSocket'
 end
