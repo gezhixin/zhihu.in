@@ -1,0 +1,41 @@
+//
+//  XST-PrefixHeader.pch
+//  xiaoshutong
+//
+//  Created by 葛枝鑫 on 2017/2/2.
+//  Copyright © 2017年 葛枝鑫. All rights reserved.
+//
+
+#ifndef XST_PrefixHeader_pch
+#define XST_PrefixHeader_pch
+
+#define skin [XSTSkin sharedInstance]
+
+#define mainDB [XSTMainDBManager sharedInstance]
+
+#define XDirectory [XSTDirectoryConfig sharedInstance]
+
+#define XFontSize(size)  [UIFont systemFontOfSize:size]
+#define XBoldFontSize(size) [UIFont boldSystemFontOfSize:size]
+
+#define KILL_NULL(str) (str.length == 0 ? @"" : str)
+#define STR_WITH_PLACEHOLDER(str, placeHolder) (str.length == 0 ? placeHolder : str)
+
+#define ScreenW [UIScreen mainScreen].bounds.size.width
+#define ScreenH [UIScreen mainScreen].bounds.size.height
+
+#ifdef __OBJC__
+    #import "XSTSkin.h"
+    #import "XSTMainDBManager.h"
+    #import "XSTBaseViewController.h"
+    #import "XSTDirectoryConfig.h"
+    #import <YYCategories/YYCategories.h>
+    #import <YYModel/YYModel.h>
+    #import "XSTNotifactionDefine.h"
+    #import "NSString+Extersion.h"
+    #import "XSTDeviceConfig.h"
+    #import "XSTUserConfigKeys.h"
+#endif
+
+
+#endif
