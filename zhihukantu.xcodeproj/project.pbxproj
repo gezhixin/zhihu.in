@@ -117,6 +117,12 @@
 		A5C3C6861FC8311B0047E133 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C3C6851FC831000047E133 /* SafariServices.framework */; };
 		A5C3C6881FC831300047E133 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C3C6871FC831290047E133 /* QuartzCore.framework */; };
 		A5C3C68A1FC8314E0047E133 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C3C6891FC831480047E133 /* AssetsLibrary.framework */; };
+		A5C50C491FC92E6700DD24A3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C50C481FC92E6600DD24A3 /* MainViewController.m */; };
+		A5C50C4C1FC933B600DD24A3 /* UserCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C50C4B1FC933B600DD24A3 /* UserCellNode.m */; };
+		A5C50C4F1FC93E6700DD24A3 /* UserInfoCellVM.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C50C4E1FC93E6700DD24A3 /* UserInfoCellVM.m */; };
+		A5C50C601FC9577400DD24A3 /* XSTBaseOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C50C5C1FC9577300DD24A3 /* XSTBaseOptionsViewController.m */; };
+		A5C50C611FC9577400DD24A3 /* XSTOptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C50C5F1FC9577300DD24A3 /* XSTOptionCell.m */; };
+		A5C50C641FC957B000DD24A3 /* XSTUserInfoSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C50C631FC957AF00DD24A3 /* XSTUserInfoSettingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -511,6 +517,18 @@
 		A5C3C6851FC831000047E133 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		A5C3C6871FC831290047E133 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A5C3C6891FC831480047E133 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		A5C50C471FC92E6600DD24A3 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		A5C50C481FC92E6600DD24A3 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		A5C50C4A1FC933B600DD24A3 /* UserCellNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserCellNode.h; sourceTree = "<group>"; };
+		A5C50C4B1FC933B600DD24A3 /* UserCellNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserCellNode.m; sourceTree = "<group>"; };
+		A5C50C4D1FC93E6700DD24A3 /* UserInfoCellVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoCellVM.h; sourceTree = "<group>"; };
+		A5C50C4E1FC93E6700DD24A3 /* UserInfoCellVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoCellVM.m; sourceTree = "<group>"; };
+		A5C50C5B1FC9577300DD24A3 /* XSTBaseOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSTBaseOptionsViewController.h; sourceTree = "<group>"; };
+		A5C50C5C1FC9577300DD24A3 /* XSTBaseOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSTBaseOptionsViewController.m; sourceTree = "<group>"; };
+		A5C50C5E1FC9577300DD24A3 /* XSTOptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSTOptionCell.h; sourceTree = "<group>"; };
+		A5C50C5F1FC9577300DD24A3 /* XSTOptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSTOptionCell.m; sourceTree = "<group>"; };
+		A5C50C621FC957AF00DD24A3 /* XSTUserInfoSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSTUserInfoSettingViewController.h; sourceTree = "<group>"; };
+		A5C50C631FC957AF00DD24A3 /* XSTUserInfoSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSTUserInfoSettingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -563,7 +581,7 @@
 		A568865A1FC811CC00C91BFE /* zhihukantu */ = {
 			isa = PBXGroup;
 			children = (
-				A5C3C68B1FC831EF0047E133 /* main */,
+				A5C50C461FC92E6500DD24A3 /* main */,
 				A56888881FC81AD500C91BFE /* app */,
 				A56886781FC81AD400C91BFE /* comControl */,
 				A568869A1FC81AD400C91BFE /* core */,
@@ -633,7 +651,6 @@
 				A56887091FC81AD400C91BFE /* qrcode */,
 				A568870C1FC81AD400C91BFE /* IFlyRecorder */,
 				A56887111FC81AD400C91BFE /* externsions */,
-				A56887201FC81AD400C91BFE /* com */,
 				A56887211FC81AD400C91BFE /* base */,
 			);
 			path = core;
@@ -744,13 +761,6 @@
 				A568871F1FC81AD400C91BFE /* NSDate+Extersion.m */,
 			);
 			path = externsions;
-			sourceTree = "<group>";
-		};
-		A56887201FC81AD400C91BFE /* com */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = com;
 			sourceTree = "<group>";
 		};
 		A56887211FC81AD400C91BFE /* base */ = {
@@ -1261,11 +1271,47 @@
 			path = database;
 			sourceTree = "<group>";
 		};
-		A5C3C68B1FC831EF0047E133 /* main */ = {
+		A5C50C461FC92E6500DD24A3 /* main */ = {
 			isa = PBXGroup;
 			children = (
+				A5C50C591FC9577300DD24A3 /* common */,
+				A5C50C471FC92E6600DD24A3 /* MainViewController.h */,
+				A5C50C481FC92E6600DD24A3 /* MainViewController.m */,
+				A5C50C621FC957AF00DD24A3 /* XSTUserInfoSettingViewController.h */,
+				A5C50C631FC957AF00DD24A3 /* XSTUserInfoSettingViewController.m */,
+				A5C50C4A1FC933B600DD24A3 /* UserCellNode.h */,
+				A5C50C4B1FC933B600DD24A3 /* UserCellNode.m */,
+				A5C50C4D1FC93E6700DD24A3 /* UserInfoCellVM.h */,
+				A5C50C4E1FC93E6700DD24A3 /* UserInfoCellVM.m */,
 			);
 			path = main;
+			sourceTree = "<group>";
+		};
+		A5C50C591FC9577300DD24A3 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				A5C50C5A1FC9577300DD24A3 /* controllers */,
+				A5C50C5D1FC9577300DD24A3 /* views */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		A5C50C5A1FC9577300DD24A3 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A5C50C5B1FC9577300DD24A3 /* XSTBaseOptionsViewController.h */,
+				A5C50C5C1FC9577300DD24A3 /* XSTBaseOptionsViewController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		A5C50C5D1FC9577300DD24A3 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				A5C50C5E1FC9577300DD24A3 /* XSTOptionCell.h */,
+				A5C50C5F1FC9577300DD24A3 /* XSTOptionCell.m */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 		ACF4D877047F6418EA231F6E /* Frameworks */ = {
@@ -1443,6 +1489,7 @@
 				A568890C1FC81AD600C91BFE /* SGQRCodeHelperTool.m in Sources */,
 				A56888D41FC81AD600C91BFE /* XSTBaseViewController.m in Sources */,
 				A56889041FC81AD600C91BFE /* YYTextTransaction.m in Sources */,
+				A5C50C601FC9577400DD24A3 /* XSTBaseOptionsViewController.m in Sources */,
 				A568890E1FC81AD600C91BFE /* SGQRCodeScanManager.m in Sources */,
 				A56889031FC81AD600C91BFE /* UIPasteboard+YYText.m in Sources */,
 				A56888C61FC81AD600C91BFE /* XSTQRCodeScanViewController.m in Sources */,
@@ -1456,11 +1503,14 @@
 				A56888F71FC81AD600C91BFE /* YYTextSelectionView.m in Sources */,
 				A56888AB1FC81AD600C91BFE /* XSTUrlConfig.m in Sources */,
 				A56889121FC81AD600C91BFE /* NSFileManager+Helper.m in Sources */,
+				A5C50C4F1FC93E6700DD24A3 /* UserInfoCellVM.m in Sources */,
 				A56889181FC81AD600C91BFE /* mztools.c in Sources */,
+				A5C50C4C1FC933B600DD24A3 /* UserCellNode.m in Sources */,
 				A568889D1FC81AD600C91BFE /* XSTImagePicker.m in Sources */,
 				A568889B1FC81AD600C91BFE /* XSTNavTitleView.m in Sources */,
 				A56888CE1FC81AD600C91BFE /* NSString+Extersion.m in Sources */,
 				A56888D81FC81AD600C91BFE /* XSTNetworkAdptter.m in Sources */,
+				A5C50C491FC92E6700DD24A3 /* MainViewController.m in Sources */,
 				A568891D1FC81AD600C91BFE /* AFURLRequestSerialization.m in Sources */,
 				A56889211FC81AD600C91BFE /* AppDelegate.m in Sources */,
 				A56888F01FC81AD600C91BFE /* YYTextView.m in Sources */,
@@ -1471,6 +1521,7 @@
 				A56889011FC81AD600C91BFE /* NSParagraphStyle+YYText.m in Sources */,
 				A56889111FC81AD600C91BFE /* DXPopover.m in Sources */,
 				A568891C1FC81AD600C91BFE /* AFURLSessionManager.m in Sources */,
+				A5C50C641FC957B000DD24A3 /* XSTUserInfoSettingViewController.m in Sources */,
 				A56888B71FC81AD600C91BFE /* XSTUserDefaultModel.m in Sources */,
 				A568891A1FC81AD600C91BFE /* AFURLResponseSerialization.m in Sources */,
 				A56888C81FC81AD600C91BFE /* ISRDataHelper.m in Sources */,
@@ -1530,6 +1581,7 @@
 				A56888F61FC81AD600C91BFE /* YYTextLine.m in Sources */,
 				A568892A1FC81C9200C91BFE /* XSTDataBaseManager.m in Sources */,
 				A56888D91FC81AD600C91BFE /* XSTHttpManager.m in Sources */,
+				A5C50C611FC9577400DD24A3 /* XSTOptionCell.m in Sources */,
 				A56888AA1FC81AD600C91BFE /* XSTDeviceConfig.mm in Sources */,
 				A56888D01FC81AD600C91BFE /* XSTSectionSeparateCellVM.m in Sources */,
 				A56888BA1FC81AD600C91BFE /* KeychainAdapter.m in Sources */,
@@ -1670,12 +1722,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/zhihukantu/TLib",
 				);
-				GCC_PREFIX_HEADER = "/Users/gezhixin/MyWork/zhihukantu/zhihukantu/app/XST-PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "/Users/gezhixin/MyWork/zhihu.in/zhihukantu/app/XST-PrefixHeader.pch";
 				INFOPLIST_FILE = zhihukantu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/zhihukantu/core/KBAQRecorder/lame",
 					"$(PROJECT_DIR)/zhihukantu/TLib/GPUImage",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = new.xin.com.zhihukantu;
@@ -1696,12 +1747,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/zhihukantu/TLib",
 				);
-				GCC_PREFIX_HEADER = "/Users/gezhixin/MyWork/zhihukantu/zhihukantu/app/XST-PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "/Users/gezhixin/MyWork/zhihu.in/zhihukantu/app/XST-PrefixHeader.pch";
 				INFOPLIST_FILE = zhihukantu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/zhihukantu/core/KBAQRecorder/lame",
 					"$(PROJECT_DIR)/zhihukantu/TLib/GPUImage",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = new.xin.com.zhihukantu;

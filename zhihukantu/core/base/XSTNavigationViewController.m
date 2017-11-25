@@ -22,7 +22,7 @@
     
     self.navigationBar.hiddenBottomLine = YES;
 //    [self hidderNavBarSubviews:self.navigationBar];
-    self.navigationBar.translucent = NO;
+    self.navigationBar.translucent = YES;
     [self.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsCompact];
     self.myBackgroundView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleLight]];
     _myBackgroundView.userInteractionEnabled = NO;

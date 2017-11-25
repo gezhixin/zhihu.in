@@ -52,14 +52,28 @@
     [super viewDidLoad];
     
     @weakify(self);
+    
+    
+    [self setLeftNavigationItems:@[@"取消"] clicked:^(id sender, NSInteger index) {
+        @strongify(self);
+        [self onCancelBtnClicked:sender];
+    }];
+    
+    
     [self setRightNavigationItems:@[self.rightBtn] clicked:^(id sender, NSInteger index) {
         @strongify(self);
         [self.textField endEditing:YES];
         if (self.blkComplated) {
             self.blkComplated(YES, self.textField.text);
         }
-        [self.navigationController popViewControllerAnimated:YES];
+        if (self.navigationController.viewControllers.firstObject == self) {
+            [self dismissViewControllerAnimated:YES completion:nil];
+        } else {
+            [self.navigationController popViewControllerAnimated:YES];
+        }
     }];
+    
+    
     self.rightBtn.enabled = NO;
 }
 
@@ -81,18 +95,26 @@
     if (self.textField.text.length > 0 && self.textChanged) {
         UIAlertController * alter = [UIAlertController alertControllerWithTitle:nil message:@"保存本次编辑？" preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction * notSave = [UIAlertAction actionWithTitle:@"不保存" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-            [super onCancelBtnClicked:sender];
+            if (self.navigationController.viewControllers.firstObject == self) {
+                [self dismissViewControllerAnimated:YES completion:nil];
+            } else {
+                [super onCancelBtnClicked:sender];
+            }
         }];
         UIAlertAction * save = [UIAlertAction actionWithTitle:@"保存" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             if (self.blkComplated) {
                 self.blkComplated(YES, self.textField.text);
             }
-            [super onCancelBtnClicked:sender];
+            if (self.navigationController.viewControllers.firstObject == self) {
+                [self dismissViewControllerAnimated:YES completion:nil];
+            } else {
+                [super onCancelBtnClicked:sender];
+            }
         }];
         [alter addAction:notSave];
         [alter addAction:save];
         [self presentViewController:alter animated:YES completion:nil];
-
+        
     } else {
         [super onCancelBtnClicked:sender];
     }
@@ -125,3 +147,4 @@
 }
 
 @end
+
