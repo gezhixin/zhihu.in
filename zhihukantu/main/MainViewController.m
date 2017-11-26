@@ -68,6 +68,7 @@
                 vm.avart = [userDic objectForKey:@"avart"];
                 vm.userPageUrl = [userDic objectForKey:@"home_page_url"];
                 vm.userToken = [userDic objectForKey:@"url_token"];
+                
                 [section.cellVMList addObject:vm];
             }
             
